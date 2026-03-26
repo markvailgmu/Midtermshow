@@ -1,0 +1,67 @@
+
+ Directory of c:\Users\fuzzy\Music\lab8
+
+03/19/2026  01:41 PM           3684867    MSI\fuzzy    Class 01sv (1).pdf
+03/19/2026  01:41 PM          15562046    MSI\fuzzy    Class 02sv (2).pdf
+03/19/2026  01:41 PM          11559173    MSI\fuzzy    Class 03sv (2).pdf
+03/19/2026  01:41 PM           1909274    MSI\fuzzy    Class 04sv (2).pdf
+03/19/2026  01:41 PM          72789725    MSI\fuzzy    Class 05sv.pdf
+03/19/2026  01:41 PM          13419834    MSI\fuzzy    Class 06sv.pdf
+03/19/2026  01:41 PM           6342431    MSI\fuzzy    Class 07sv.pdf
+03/19/2026  01:44 PM                 2    MSI\fuzzy    create_study_guide.py
+03/19/2026  01:45 PM             19080    MSI\fuzzy    DFOR671_Midterm_Study_Guide.pdf
+03/23/2026  04:50 PM              1371    MSI\fuzzy    DFOR772_HW8_Answers.pdf
+03/23/2026  05:46 PM              2506    MSI\fuzzy    DFOR772_HW8_ANSWERS_VERIFIED.txt
+03/23/2026  05:50 PM              3045    MSI\fuzzy    DFOR772_HW8_Answers_with_Commands.pdf
+03/23/2026  04:49 PM            342012    MSI\fuzzy    DFOR_772_HW_8.pdf
+03/19/2026  05:15 PM                 0    MSI\fuzzy    extract_pdfs.py
+03/23/2026  05:50 PM              5181    MSI\fuzzy    generate_answers_pdf.py
+03/23/2026  05:04 PM              1301    MSI\fuzzy    hw8_72bytes_screenshot.html
+03/23/2026  04:51 PM              1051    MSI\fuzzy    HW8_INSTRUCTIONS.txt
+03/23/2026  04:57 PM              2969    MSI\fuzzy    hxd_highlight_helper.py
+03/23/2026  05:07 PM              3226    MSI\fuzzy    HxD_SETTINGS_GUIDE.txt
+03/23/2026  04:57 PM               474    MSI\fuzzy    hxd_what_to_look_at.txt
+03/23/2026  04:53 PM              1371    MSI\fuzzy    lastname_firstname_hw8.pdf
+03/23/2026  04:50 PM           2097152    MSI\fuzzy    memory.vmem
+03/23/2026  04:51 PM           5567519    MSI\fuzzy    memory.vmsn
+03/25/2026  08:41 PM    <DIR>          MSI\fuzzy    midterm_dir_cd_pwd
+03/23/2026  05:04 PM              4438    MSI\fuzzy    open_hxd_and_highlight.py
+03/23/2026  04:50 PM              1890    MSI\fuzzy    proximity_IP_address_extractor.py
+03/19/2026  05:20 PM                 2    MSI\fuzzy    q.py
+03/19/2026  05:19 PM                 2    MSI\fuzzy    quiz.py
+03/19/2026  05:16 PM                 2    MSI\fuzzy    quiz_program.py
+03/23/2026  04:50 PM              6521    MSI\fuzzy    run_hw8_and_generate_answers.py
+
+ Directory of c:\Users\fuzzy\Music\lab8\midterm_dir_cd_pwd
+
+03/25/2026  08:46 PM                27    MSI\fuzzy    .gitignore
+03/25/2026  08:43 PM               429    MSI\fuzzy    build.bat
+03/25/2026  08:41 PM               758    MSI\fuzzy    mycd.cpp
+03/25/2026  08:45 PM            135168    MSI\fuzzy    mycd.exe
+03/25/2026  08:45 PM              5821    MSI\fuzzy    mycd.obj
+03/25/2026  08:42 PM              5942    MSI\fuzzy    mydir.cpp
+03/25/2026  08:45 PM            142336    MSI\fuzzy    mydir.exe
+03/25/2026  08:45 PM             18163    MSI\fuzzy    mydir.obj
+03/25/2026  08:41 PM               382    MSI\fuzzy    mypwd.cpp
+03/25/2026  08:45 PM            135168    MSI\fuzzy    mypwd.exe
+03/25/2026  08:45 PM              3852    MSI\fuzzy    mypwd.obj
+03/25/2026  08:43 PM              1126    MSI\fuzzy    README.md
+03/25/2026  09:00 PM    <DIR>          MSI\fuzzy    testnest
+03/25/2026  09:02 PM                 0    MSI\fuzzy    _out_lab8.txt
+03/25/2026  09:00 PM                 0    MSI\fuzzy    _test_out.txt
+
+ Directory of c:\Users\fuzzy\Music\lab8\midterm_dir_cd_pwd\testnest
+
+03/25/2026  09:00 PM    <DIR>          MSI\fuzzy    a
+
+ Directory of c:\Users\fuzzy\Music\lab8\midterm_dir_cd_pwd\testnest\a
+
+03/25/2026  09:00 PM    <DIR>          MSI\fuzzy    b
+
+ Directory of c:\Users\fuzzy\Music\lab8\midterm_dir_cd_pwd\testnest\a\b
+
+03/25/2026  09:00 PM    <DIR>          MSI\fuzzy    c
+
+ Directory of c:\Users\fuzzy\Music\lab8\midterm_dir_cd_pwd\testnest\a\b\c
+
+
