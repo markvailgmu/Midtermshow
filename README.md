@@ -1,3 +1,3 @@
 # Midtermshow
 
-Optional: run **`install_msvc.bat`** as Administrator to download and install **Visual Studio Build Tools** (C++ / MSVC), then **`.\build.bat`**.
+Optional: **`install_msvc.bat`** (admin) for MSVC. **`add_project_to_path.bat`** once so you can type **`mydir`** / **`mypwd`** without `.\` in new terminals.
