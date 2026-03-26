@@ -2,3 +2,5 @@
 *.pdb
 *.ilk
 .vs/
+_out*.txt
+_test*.txt
