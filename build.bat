@@ -2,67 +2,16 @@
 setlocal EnableDelayedExpansion
 cd /d "%~dp0"
 
-where cl >nul 2>&1
-if not errorlevel 1 goto :compile
+REM Always load vcvars64 when possible. If we skip this because "cl" is already on PATH,
+REM INCLUDE may be wrong and you get: fatal error C1083: cannot open include file 'windows.h'
 
-set "VSWHERE=%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe"
-if exist "%VSWHERE%" (
-  for /f "usebackq tokens=* delims=" %%i in (`"%VSWHERE%" -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath 2^>nul`) do (
-    if exist "%%i\VC\Auxiliary\Build\vcvars64.bat" (
-      call "%%i\VC\Auxiliary\Build\vcvars64.bat" >nul
-      goto :checkcl
-    )
-  )
-  for /f "usebackq tokens=* delims=" %%i in (`"%VSWHERE%" -latest -products * -property installationPath 2^>nul`) do (
-    if exist "%%i\VC\Auxiliary\Build\vcvars64.bat" (
-      call "%%i\VC\Auxiliary\Build\vcvars64.bat" >nul
-      goto :checkcl
-    )
-  )
-)
-
-if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat" (
-  call "%ProgramFiles(x86)%\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat" >nul
-  goto :checkcl
-)
-if exist "%ProgramFiles%\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat" (
-  call "%ProgramFiles%\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat" >nul
-  goto :checkcl
-)
-if exist "%ProgramFiles%\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvars64.bat" (
-  call "%ProgramFiles%\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvars64.bat" >nul
-  goto :checkcl
-)
-if exist "%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat" (
-  call "%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat" >nul
-  goto :checkcl
-)
-if exist "%ProgramFiles%\Microsoft Visual Studio\18\Community\VC\Auxiliary\Build\vcvars64.bat" (
-  call "%ProgramFiles%\Microsoft Visual Studio\18\Community\VC\Auxiliary\Build\vcvars64.bat" >nul
-  goto :checkcl
-)
-if exist "%ProgramFiles%\Microsoft Visual Studio\18\Professional\VC\Auxiliary\Build\vcvars64.bat" (
-  call "%ProgramFiles%\Microsoft Visual Studio\18\Professional\VC\Auxiliary\Build\vcvars64.bat" >nul
-  goto :checkcl
-)
-if exist "%ProgramFiles%\Microsoft Visual Studio\18\BuildTools\VC\Auxiliary\Build\vcvars64.bat" (
-  call "%ProgramFiles%\Microsoft Visual Studio\18\BuildTools\VC\Auxiliary\Build\vcvars64.bat" >nul
-  goto :checkcl
-)
-
-echo ERROR: Could not find MSVC ^(cl.exe^). Install "Desktop development with C++" or "C++ build tools"
-echo from Visual Studio Installer, then run again. Or open "x64 Native Tools Command Prompt for VS"
-echo and run:  build.bat
-exit /b 1
-
-:checkcl
+call :load_vcvars
 where cl >nul 2>&1
 if errorlevel 1 (
-  echo ERROR: vcvars64 ran but cl.exe is still not on PATH.
+  echo ERROR: cl.exe not found. Install MSVC / Windows SDK ^(Desktop development with C++^) or run from "x64 Native Tools Command Prompt for VS".
   exit /b 1
 )
 
-:compile
 del /f /q mycd.exe 2>nul
 echo Compiling...
 cl /nologo /EHsc /O2 /W3 /Fe:mydir.exe mydir.cpp
@@ -77,5 +26,51 @@ exit /b 0
 
 :bad
 echo.
-echo ERROR: compile failed.
+echo ERROR: compile failed. If you see C1083 windows.h: open Visual Studio Installer -^> Modify -^> add "Windows 10/11 SDK" under Individual components.
 exit /b 1
+
+:load_vcvars
+set "VSWHERE=%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe"
+if exist "%VSWHERE%" (
+  for /f "usebackq tokens=* delims=" %%i in (`"%VSWHERE%" -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath 2^>nul`) do (
+    if exist "%%i\VC\Auxiliary\Build\vcvars64.bat" (
+      call "%%i\VC\Auxiliary\Build\vcvars64.bat" >nul
+      exit /b 0
+    )
+  )
+  for /f "usebackq tokens=* delims=" %%i in (`"%VSWHERE%" -latest -products * -property installationPath 2^>nul`) do (
+    if exist "%%i\VC\Auxiliary\Build\vcvars64.bat" (
+      call "%%i\VC\Auxiliary\Build\vcvars64.bat" >nul
+      exit /b 0
+    )
+  )
+)
+if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles(x86)%\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+if exist "%ProgramFiles%\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles%\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+if exist "%ProgramFiles%\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles%\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+if exist "%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+if exist "%ProgramFiles%\Microsoft Visual Studio\18\Community\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles%\Microsoft Visual Studio\18\Community\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+if exist "%ProgramFiles%\Microsoft Visual Studio\18\Professional\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles%\Microsoft Visual Studio\18\Professional\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+if exist "%ProgramFiles%\Microsoft Visual Studio\18\BuildTools\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles%\Microsoft Visual Studio\18\BuildTools\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+exit /b 0

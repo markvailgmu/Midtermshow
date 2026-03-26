@@ -29,6 +29,7 @@ Write-Host 'Installing C++ build tools (MSVC, SDK). This can take a long time.'
 $args = @(
     '--quiet', '--wait', '--norestart',
     '--add', 'Microsoft.VisualStudio.Workload.VCTools',
+    '--add', 'Microsoft.VisualStudio.Component.Windows10SDK',
     '--includeRecommended'
 )
 $p = Start-Process -FilePath $bootstrap -ArgumentList $args -Wait -PassThru -NoNewWindow
