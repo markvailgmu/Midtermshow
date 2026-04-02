@@ -1,0 +1,167 @@
+@echo off
+setlocal EnableDelayedExpansion
+goto :main
+
+___BEGIN_MYDIR___
+REM B64:I2RlZmluZSBVTklDT0RFDQojZGVmaW5lIF9VTklDT0RFDQojZGVmaW5lIFdJTjMyX0xFQU5fQU5EX01FQU4NCiNpbmNsdWRlIDx3aW5kb3dzLmg+DQojaW5j
+REM B64:bHVkZSA8YWNsYXBpLmg+DQojaW5jbHVkZSA8c3RkaW8uaD4NCiNpbmNsdWRlIDxzdGRsaWIuaD4NCiNpbmNsdWRlIDxzdHJpbmcuaD4NCg0KI3ByYWdtYSBj
+REM B64:b21tZW50KGxpYiwgImFkdmFwaTMyLmxpYiIpDQoNCnN0YXRpYyBpbnQgZmxhZ19hOw0Kc3RhdGljIGludCBmbGFnX3M7DQpzdGF0aWMgaW50IGZsYWdfcTsN
+REM B64:Cg0Kc3RhdGljIHZvaWQgcHJpbnRfdXNhZ2Uodm9pZCkgew0KICAgIGZ3cHJpbnRmKHN0ZGVyciwgTCJ1c2FnZTogbXlkaXIgWy9hXSBbL3NdIFsvcV0gW3Bh
+REM B64:dGhdXG4iKTsNCn0NCg0Kc3RhdGljIGludCBpc19zd2l0Y2goY29uc3Qgd2NoYXJfdCogcykgew0KICAgIGlmICghcyB8fCBzWzBdICE9IEwnLycgJiYgc1sw
+REM B64:XSAhPSBMJy0nKQ0KICAgICAgICByZXR1cm4gMDsNCiAgICB3Y2hhcl90IGMgPSAod2NoYXJfdCkoc1sxXSB8IDB4MjApOw0KICAgIGlmIChzWzJdICE9IEwn
+REM B64:XDAnKQ0KICAgICAgICByZXR1cm4gMDsNCiAgICByZXR1cm4gYyA9PSBMJ2EnIHx8IGMgPT0gTCdzJyB8fCBjID09IEwncSc7DQp9DQoNCnN0YXRpYyB2b2lk
+REM B64:IGFwcGx5X3N3aXRjaCh3Y2hhcl90IGMpIHsNCiAgICBjID0gKHdjaGFyX3QpKGMgfCAweDIwKTsNCiAgICBpZiAoYyA9PSBMJ2EnKQ0KICAgICAgICBmbGFn
+REM B64:X2EgPSAxOw0KICAgIGVsc2UgaWYgKGMgPT0gTCdzJykNCiAgICAgICAgZmxhZ19zID0gMTsNCiAgICBlbHNlIGlmIChjID09IEwncScpDQogICAgICAgIGZs
+REM B64:YWdfcSA9IDE7DQp9DQoNCnN0YXRpYyBpbnQgaXNfZG90cyhjb25zdCB3Y2hhcl90KiBuYW1lKSB7DQogICAgcmV0dXJuIChuYW1lWzBdID09IEwnLicgJiYg
+REM B64:bmFtZVsxXSA9PSBMJ1wwJykgfHwNCiAgICAgICAgICAgKG5hbWVbMF0gPT0gTCcuJyAmJiBuYW1lWzFdID09IEwnLicgJiYgbmFtZVsyXSA9PSBMJ1wwJyk7
+REM B64:DQp9DQoNCnN0YXRpYyBpbnQgc2hvdWxkX2xpc3QoRFdPUkQgYXR0cnMpIHsNCiAgICBpZiAoZmxhZ19hKQ0KICAgICAgICByZXR1cm4gMTsNCiAgICBpZiAo
+REM B64:YXR0cnMgJiAoRklMRV9BVFRSSUJVVEVfSElEREVOIHwgRklMRV9BVFRSSUJVVEVfU1lTVEVNKSkNCiAgICAgICAgcmV0dXJuIDA7DQogICAgcmV0dXJuIDE7
+REM B64:DQp9DQoNCnN0YXRpYyB2b2lkIGZvcm1hdF9jcmVhdGlvbl90aW1lKGNvbnN0IEZJTEVUSU1FKiBmdCwgd2NoYXJfdCogb3V0LCBzaXplX3Qgb3V0Q2hhcnMp
+REM B64:IHsNCiAgICBGSUxFVElNRSBsZnQ7DQogICAgU1lTVEVNVElNRSBzdDsNCiAgICBpZiAoIUZpbGVUaW1lVG9Mb2NhbEZpbGVUaW1lKGZ0LCAmbGZ0KSB8fCAh
+REM B64:RmlsZVRpbWVUb1N5c3RlbVRpbWUoJmxmdCwgJnN0KSkgew0KICAgICAgICB3Y3NuY3B5X3Mob3V0LCBvdXRDaGFycywgTCI/Lz8vPyAgID8/Oj8/IiwgX1RS
+REM B64:VU5DQVRFKTsNCiAgICAgICAgcmV0dXJuOw0KICAgIH0NCiAgICBpbnQgaG91cjEyID0gc3Qud0hvdXIgJSAxMjsNCiAgICBpZiAoaG91cjEyID09IDApDQog
+REM B64:ICAgICAgIGhvdXIxMiA9IDEyOw0KICAgIGNvbnN0IHdjaGFyX3QqIGFtcG0gPSBzdC53SG91ciA8IDEyID8gTCJBTSIgOiBMIlBNIjsNCiAgICBzd3ByaW50
+REM B64:Zl9zKG91dCwgb3V0Q2hhcnMsIEwiJTAydS8lMDJ1LyUwNHUgICUwMnU6JTAydSAlcyIsIHN0LndNb250aCwgc3Qud0RheSwgc3Qud1llYXIsIGhvdXIxMiwN
+REM B64:CiAgICAgICAgICAgICAgIHN0LndNaW51dGUsIGFtcG0pOw0KfQ0KDQpzdGF0aWMgaW50IGdldF9vd25lcl9zdHJpbmcoY29uc3Qgd2NoYXJfdCogZnVsbFBh
+REM B64:dGgsIHdjaGFyX3QqIG91dCwgc2l6ZV90IG91dENoYXJzKSB7DQogICAgUFNJRCBvd25lclNpZCA9IE5VTEw7DQogICAgUFNFQ1VSSVRZX0RFU0NSSVBUT1Ig
+REM B64:c2QgPSBOVUxMOw0KICAgIERXT1JEIHN0ID0gR2V0TmFtZWRTZWN1cml0eUluZm9XKChMUFdTVFIpZnVsbFBhdGgsIFNFX0ZJTEVfT0JKRUNULCBPV05FUl9T
+REM B64:RUNVUklUWV9JTkZPUk1BVElPTiwNCiAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAgICAmb3duZXJTaWQsIE5VTEwsIE5VTEwsIE5VTEwsICZz
+REM B64:ZCk7DQogICAgaWYgKHN0ICE9IEVSUk9SX1NVQ0NFU1MpIHsNCiAgICAgICAgc3dwcmludGZfcyhvdXQsIG91dENoYXJzLCBMIihvd25lciBlcnJvciAlbHUp
+REM B64:Iiwgc3QpOw0KICAgICAgICByZXR1cm4gMDsNCiAgICB9DQogICAgd2NoYXJfdCBuYW1lWzI1Nl0sIGRvbVsyNTZdOw0KICAgIERXT1JEIG5hbWVMZW4gPSAy
+REM B64:NTYsIGRvbUxlbiA9IDI1NjsNCiAgICBTSURfTkFNRV9VU0UgbnU7DQogICAgaWYgKCFMb29rdXBBY2NvdW50U2lkVyhOVUxMLCBvd25lclNpZCwgbmFtZSwg
+REM B64:Jm5hbWVMZW4sIGRvbSwgJmRvbUxlbiwgJm51KSkgew0KICAgICAgICBzd3ByaW50Zl9zKG91dCwgb3V0Q2hhcnMsIEwiKHVucmVzb2x2ZWQpIik7DQogICAg
+REM B64:ICAgIExvY2FsRnJlZShzZCk7DQogICAgICAgIHJldHVybiAwOw0KICAgIH0NCiAgICBMb2NhbEZyZWUoc2QpOw0KICAgIGlmIChkb21MZW4gPiAwICYmIGRv
+REM B64:bVswXSAhPSBMJ1wwJykNCiAgICAgICAgc3dwcmludGZfcyhvdXQsIG91dENoYXJzLCBMIiVzXFwlcyIsIGRvbSwgbmFtZSk7DQogICAgZWxzZQ0KICAgICAg
+REM B64:ICB3Y3NuY3B5X3Mob3V0LCBvdXRDaGFycywgbmFtZSwgX1RSVU5DQVRFKTsNCiAgICByZXR1cm4gMTsNCn0NCg0Kc3RhdGljIHZvaWQgcHJpbnRfZW50cnko
+REM B64:Y29uc3Qgd2NoYXJfdCogZnVsbFBhdGgsIGNvbnN0IFdJTjMyX0ZJTkRfREFUQVcqIGZkKSB7DQogICAgd2NoYXJfdCB0YnVmWzY0XTsNCiAgICBmb3JtYXRf
+REM B64:Y3JlYXRpb25fdGltZSgmZmQtPmZ0Q3JlYXRpb25UaW1lLCB0YnVmLCA2NCk7DQoNCiAgICBVTE9OR0xPTkcgc2l6ZSA9ICgoVUxPTkdMT05HKWZkLT5uRmls
+REM B64:ZVNpemVIaWdoIDw8IDMyKSB8IGZkLT5uRmlsZVNpemVMb3c7DQogICAgaW50IGlzRGlyID0gKGZkLT5kd0ZpbGVBdHRyaWJ1dGVzICYgRklMRV9BVFRSSUJV
+REM B64:VEVfRElSRUNUT1JZKSAhPSAwOw0KDQogICAgd2NoYXJfdCBvd25lcls1MTJdOw0KICAgIG93bmVyWzBdID0gTCdcMCc7DQogICAgaWYgKGZsYWdfcSkNCiAg
+REM B64:ICAgICAgZ2V0X293bmVyX3N0cmluZyhmdWxsUGF0aCwgb3duZXIsIDUxMik7DQoNCiAgICBpZiAoaXNEaXIpIHsNCiAgICAgICAgaWYgKGZsYWdfcSkNCiAg
+REM B64:ICAgICAgICAgIHdwcmludGYoTCIlcyAgICA8RElSPiAgICAgICAgICAlcyAgICAlc1xuIiwgdGJ1Ziwgb3duZXIsIGZkLT5jRmlsZU5hbWUpOw0KICAgICAg
+REM B64:ICBlbHNlDQogICAgICAgICAgICB3cHJpbnRmKEwiJXMgICAgPERJUj4gICAgICAgICAgJXNcbiIsIHRidWYsIGZkLT5jRmlsZU5hbWUpOw0KICAgIH0gZWxz
+REM B64:ZSB7DQogICAgICAgIGlmIChmbGFnX3EpDQogICAgICAgICAgICB3cHJpbnRmKEwiJXMgICAgJTE0bGx1ICAgICVzICAgICVzXG4iLCB0YnVmLCBzaXplLCBv
+REM B64:d25lciwgZmQtPmNGaWxlTmFtZSk7DQogICAgICAgIGVsc2UNCiAgICAgICAgICAgIHdwcmludGYoTCIlcyAgICAlMTRsbHUgICAgJXNcbiIsIHRidWYsIHNp
+REM B64:emUsIGZkLT5jRmlsZU5hbWUpOw0KICAgIH0NCn0NCg0Kc3RhdGljIHZvaWQgbGlzdF9vbmVfZGlyZWN0b3J5KGNvbnN0IHdjaGFyX3QqIGRpclBhdGgpIHsN
+REM B64:CiAgICB3Y2hhcl90IHBhdHRlcm5bTUFYX1BBVEggKiAyXTsNCiAgICBzd3ByaW50Zl9zKHBhdHRlcm4sIE1BWF9QQVRIICogMiwgTCIlc1xcKiIsIGRpclBh
+REM B64:dGgpOw0KDQogICAgd2NoYXJfdCBjYW5vbltNQVhfUEFUSCAqIDJdOw0KICAgIERXT1JEIGdsID0gR2V0RnVsbFBhdGhOYW1lVyhkaXJQYXRoLCBNQVhfUEFU
+REM B64:SCAqIDIsIGNhbm9uLCBOVUxMKTsNCiAgICBpZiAoZ2wgPT0gMCB8fCBnbCA+PSBNQVhfUEFUSCAqIDIpDQogICAgICAgIHdjc25jcHlfcyhjYW5vbiwgTUFY
+REM B64:X1BBVEggKiAyLCBkaXJQYXRoLCBfVFJVTkNBVEUpOw0KDQogICAgd3ByaW50ZihMIlxuIERpcmVjdG9yeSBvZiAlc1xuXG4iLCBjYW5vbik7DQoNCiAgICBX
+REM B64:SU4zMl9GSU5EX0RBVEFXIGZkOw0KICAgIEhBTkRMRSBoID0gRmluZEZpcnN0RmlsZVcocGF0dGVybiwgJmZkKTsNCiAgICBpZiAoaCA9PSBJTlZBTElEX0hB
+REM B64:TkRMRV9WQUxVRSkgew0KICAgICAgICBmd3ByaW50ZihzdGRlcnIsIEwibXlkaXI6IGNhbm5vdCBhY2Nlc3MgXCIlc1wiICglbHUpXG4iLCBkaXJQYXRoLCBH
+REM B64:ZXRMYXN0RXJyb3IoKSk7DQogICAgICAgIHJldHVybjsNCiAgICB9DQoNCiAgICBlbnVtIHsgTUFYU1VCID0gNTEyIH07DQogICAgd2NoYXJfdCgqc3ViZGly
+REM B64:cylbTUFYX1BBVEggKiAyXSA9DQogICAgICAgICh3Y2hhcl90KCopW01BWF9QQVRIICogMl0pbWFsbG9jKChzaXplX3QpTUFYU1VCICogc2l6ZW9mKCpzdWJk
+REM B64:aXJzKSk7DQogICAgaWYgKCFzdWJkaXJzKSB7DQogICAgICAgIEZpbmRDbG9zZShoKTsNCiAgICAgICAgZndwcmludGYoc3RkZXJyLCBMIm15ZGlyOiBvdXQg
+REM B64:b2YgbWVtb3J5XG4iKTsNCiAgICAgICAgcmV0dXJuOw0KICAgIH0NCiAgICBpbnQgbnN1YiA9IDA7DQoNCiAgICBkbyB7DQogICAgICAgIGlmIChpc19kb3Rz
+REM B64:KGZkLmNGaWxlTmFtZSkpDQogICAgICAgICAgICBjb250aW51ZTsNCiAgICAgICAgaWYgKCFzaG91bGRfbGlzdChmZC5kd0ZpbGVBdHRyaWJ1dGVzKSkNCiAg
+REM B64:ICAgICAgICAgIGNvbnRpbnVlOw0KDQogICAgICAgIHdjaGFyX3QgZnVsbFtNQVhfUEFUSCAqIDJdOw0KICAgICAgICBzd3ByaW50Zl9zKGZ1bGwsIE1BWF9Q
+REM B64:QVRIICogMiwgTCIlc1xcJXMiLCBkaXJQYXRoLCBmZC5jRmlsZU5hbWUpOw0KDQogICAgICAgIHByaW50X2VudHJ5KGZ1bGwsICZmZCk7DQoNCiAgICAgICAg
+REM B64:aWYgKGZsYWdfcyAmJiAoZmQuZHdGaWxlQXR0cmlidXRlcyAmIEZJTEVfQVRUUklCVVRFX0RJUkVDVE9SWSkgJiYgIWlzX2RvdHMoZmQuY0ZpbGVOYW1lKSAm
+REM B64:Jg0KICAgICAgICAgICAgc2hvdWxkX2xpc3QoZmQuZHdGaWxlQXR0cmlidXRlcykpIHsNCiAgICAgICAgICAgIGlmIChuc3ViIDwgTUFYU1VCKQ0KICAgICAg
+REM B64:ICAgICAgICAgIHdjc25jcHlfcyhzdWJkaXJzW25zdWIrK10sIE1BWF9QQVRIICogMiwgZnVsbCwgX1RSVU5DQVRFKTsNCiAgICAgICAgfQ0KICAgIH0gd2hp
+REM B64:bGUgKEZpbmROZXh0RmlsZVcoaCwgJmZkKSk7DQoNCiAgICBGaW5kQ2xvc2UoaCk7DQoNCiAgICBmb3IgKGludCBpID0gMDsgaSA8IG5zdWI7IGkrKykNCiAg
+REM B64:ICAgICAgbGlzdF9vbmVfZGlyZWN0b3J5KHN1YmRpcnNbaV0pOw0KICAgIGZyZWUoc3ViZGlycyk7DQp9DQoNCmludCB3bWFpbihpbnQgYXJnYywgd2NoYXJf
+REM B64:dCoqIGFyZ3YpIHsNCiAgICBjb25zdCB3Y2hhcl90KiB0YXJnZXQgPSBOVUxMOw0KDQogICAgZm9yIChpbnQgaSA9IDE7IGkgPCBhcmdjOyBpKyspIHsNCiAg
+REM B64:ICAgICAgaWYgKGlzX3N3aXRjaChhcmd2W2ldKSkNCiAgICAgICAgICAgIGFwcGx5X3N3aXRjaChhcmd2W2ldWzFdKTsNCiAgICAgICAgZWxzZSBpZiAoIXRh
+REM B64:cmdldCkNCiAgICAgICAgICAgIHRhcmdldCA9IGFyZ3ZbaV07DQogICAgICAgIGVsc2Ugew0KICAgICAgICAgICAgZndwcmludGYoc3RkZXJyLCBMIm15ZGly
+REM B64:OiB1bmV4cGVjdGVkIGFyZ3VtZW50OiAlc1xuIiwgYXJndltpXSk7DQogICAgICAgICAgICBwcmludF91c2FnZSgpOw0KICAgICAgICAgICAgcmV0dXJuIDE7
+REM B64:DQogICAgICAgIH0NCiAgICB9DQoNCiAgICB3Y2hhcl90IGN3ZFtNQVhfUEFUSCArIDFdOw0KICAgIGlmICghdGFyZ2V0KSB7DQogICAgICAgIGlmICghR2V0
+REM B64:Q3VycmVudERpcmVjdG9yeVcoTUFYX1BBVEggKyAxLCBjd2QpKSB7DQogICAgICAgICAgICBmd3ByaW50ZihzdGRlcnIsIEwibXlkaXI6IEdldEN1cnJlbnRE
+REM B64:aXJlY3RvcnkgZmFpbGVkICglbHUpXG4iLCBHZXRMYXN0RXJyb3IoKSk7DQogICAgICAgICAgICByZXR1cm4gMTsNCiAgICAgICAgfQ0KICAgICAgICB0YXJn
+REM B64:ZXQgPSBjd2Q7DQogICAgfQ0KDQogICAgbGlzdF9vbmVfZGlyZWN0b3J5KHRhcmdldCk7DQogICAgd3ByaW50ZihMIlxuIik7DQogICAgcmV0dXJuIDA7DQp9
+REM B64:DQo=
+___END_MYDIR___
+___BEGIN_MYCD___
+REM B64:I2RlZmluZSBVTklDT0RFDQojZGVmaW5lIF9VTklDT0RFDQojaW5jbHVkZSA8d2luZG93cy5oPg0KI2luY2x1ZGUgPHN0ZGlvLmg+DQoNCnN0YXRpYyB2b2lk
+REM B64:IHByaW50X3VzYWdlKHZvaWQpIHsNCiAgICBmd3ByaW50ZihzdGRlcnIsIEwidXNhZ2U6IG15Y2QgPHBhdGg+XG4iKTsNCn0NCg0KaW50IHdtYWluKGludCBh
+REM B64:cmdjLCB3Y2hhcl90KiogYXJndikgew0KICAgIGlmIChhcmdjICE9IDIpIHsNCiAgICAgICAgcHJpbnRfdXNhZ2UoKTsNCiAgICAgICAgcmV0dXJuIDE7DQog
+REM B64:ICAgfQ0KDQogICAgaWYgKCFTZXRDdXJyZW50RGlyZWN0b3J5Vyhhcmd2WzFdKSkgew0KICAgICAgICBmd3ByaW50ZihzdGRlcnIsIEwibXljZDogY291bGQg
+REM B64:bm90IGNoYW5nZSB0byBcIiVzXCIgKCVsdSlcbiIsIGFyZ3ZbMV0sIEdldExhc3RFcnJvcigpKTsNCiAgICAgICAgcmV0dXJuIDE7DQogICAgfQ0KDQogICAg
+REM B64:d2NoYXJfdCBidWZbTUFYX1BBVEggKyAxXTsNCiAgICBEV09SRCBuID0gR2V0Q3VycmVudERpcmVjdG9yeVcoTUFYX1BBVEggKyAxLCBidWYpOw0KICAgIGlm
+REM B64:IChuID09IDAgfHwgbiA+IE1BWF9QQVRIKSB7DQogICAgICAgIGZ3cHJpbnRmKHN0ZGVyciwgTCJteWNkOiBHZXRDdXJyZW50RGlyZWN0b3J5IGZhaWxlZCAo
+REM B64:JWx1KVxuIiwgR2V0TGFzdEVycm9yKCkpOw0KICAgICAgICByZXR1cm4gMTsNCiAgICB9DQoNCiAgICB3cHJpbnRmKEwiQ3VycmVudCBkaXJlY3RvcnkgaXMg
+REM B64:bm93OlxuJXNcbiIsIGJ1Zik7DQogICAgcmV0dXJuIDA7DQp9DQo=
+___END_MYCD___
+___BEGIN_MYPWD___
+REM B64:I2RlZmluZSBVTklDT0RFDQojZGVmaW5lIF9VTklDT0RFDQojaW5jbHVkZSA8d2luZG93cy5oPg0KI2luY2x1ZGUgPHN0ZGlvLmg+DQoNCmludCB3bWFpbih2
+REM B64:b2lkKSB7DQogICAgd2NoYXJfdCBidWZbTUFYX1BBVEggKyAxXTsNCiAgICBEV09SRCBuID0gR2V0Q3VycmVudERpcmVjdG9yeVcoTUFYX1BBVEggKyAxLCBi
+REM B64:dWYpOw0KICAgIGlmIChuID09IDAgfHwgbiA+IE1BWF9QQVRIKSB7DQogICAgICAgIGZ3cHJpbnRmKHN0ZGVyciwgTCJteXB3ZDogR2V0Q3VycmVudERpcmVj
+REM B64:dG9yeSBmYWlsZWQgKCVsdSlcbiIsIEdldExhc3RFcnJvcigpKTsNCiAgICAgICAgcmV0dXJuIDE7DQogICAgfQ0KICAgIHdwcmludGYoTCIlc1xuIiwgYnVm
+REM B64:KTsNCiAgICByZXR1cm4gMDsNCn0NCg==
+___END_MYPWD___
+
+:main
+cd /d "%~dp0"
+
+REM Emit .cpp files from REM B64: chunks above (self-contained; only this .bat needed)
+powershell -NoProfile -ExecutionPolicy Bypass -Command "& { $f='%~f0'; $t=[IO.File]::ReadAllText($f); function W([string]$name,[string]$a,[string]$b){ $i=$t.IndexOf($a); $j=$t.IndexOf($b); if($i -lt 0 -or $j -lt 0 -or $j -le $i){ throw ('bad '+$name) }; $raw=$t.Substring($i+$a.Length,$j-$i-$a.Length); $b64=($raw -split [char]10 | ForEach-Object { $_.TrimEnd([char]13) } | Where-Object { $_ -match '^REM B64:' } | ForEach-Object { $_ -replace '^REM B64:','' }) -join ''; [IO.File]::WriteAllText((Join-Path (Get-Location) $name), [Text.Encoding]::UTF8.GetString([Convert]::FromBase64String($b64))) }; W 'mydir.cpp' '___BEGIN_MYDIR___' '___END_MYDIR___'; W 'mycd.cpp' '___BEGIN_MYCD___' '___END_MYCD___'; W 'mypwd.cpp' '___BEGIN_MYPWD___' '___END_MYPWD___'; }"
+if errorlevel 1 ( echo ERROR: failed to write source files & exit /b 1 )
+
+call :load_vcvars
+where cl >nul 2>&1
+if errorlevel 1 (
+  echo ERROR: cl.exe not found. Install MSVC / Windows SDK ^(Desktop development with C++^) or run from "x64 Native Tools Command Prompt for VS".
+  exit /b 1
+)
+
+echo Compiling...
+cl /nologo /EHsc /O2 /W3 /Fe:mydir.exe mydir.cpp
+if errorlevel 1 goto :bad
+cl /nologo /EHsc /O2 /W3 /Fe:mycd_api.exe mycd.cpp
+if errorlevel 1 goto :bad
+cl /nologo /EHsc /O2 /W3 /Fe:mypwd.exe mypwd.cpp
+if errorlevel 1 goto :bad
+echo.
+echo OK - Built: mydir.exe  mycd_api.exe  mypwd.exe
+exit /b 0
+
+:bad
+echo.
+echo ERROR: compile failed. If you see C1083 windows.h: open Visual Studio Installer -^> Modify -^> add "Windows 10/11 SDK" under Individual components.
+exit /b 1
+
+:load_vcvars
+set "VSWHERE=%ProgramFiles(x86)%\Microsoft Visual Studio\Installer\vswhere.exe"
+if exist "%VSWHERE%" (
+  for /f "usebackq tokens=* delims=" %%i in (`"%VSWHERE%" -latest -products * -requires Microsoft.VisualStudio.Component.VC.Tools.x86.x64 -property installationPath 2^>nul`) do (
+    if exist "%%i\VC\Auxiliary\Build\vcvars64.bat" (
+      call "%%i\VC\Auxiliary\Build\vcvars64.bat" >nul
+      exit /b 0
+    )
+  )
+  for /f "usebackq tokens=* delims=" %%i in (`"%VSWHERE%" -latest -products * -property installationPath 2^>nul`) do (
+    if exist "%%i\VC\Auxiliary\Build\vcvars64.bat" (
+      call "%%i\VC\Auxiliary\Build\vcvars64.bat" >nul
+      exit /b 0
+    )
+  )
+)
+if exist "%ProgramFiles(x86)%\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles(x86)%\Microsoft Visual Studio\2022\BuildTools\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+if exist "%ProgramFiles%\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles%\Microsoft Visual Studio\2022\Community\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+if exist "%ProgramFiles%\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles%\Microsoft Visual Studio\2022\Professional\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+if exist "%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles%\Microsoft Visual Studio\2022\Enterprise\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+if exist "%ProgramFiles%\Microsoft Visual Studio\18\Community\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles%\Microsoft Visual Studio\18\Community\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+if exist "%ProgramFiles%\Microsoft Visual Studio\18\Professional\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles%\Microsoft Visual Studio\18\Professional\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+if exist "%ProgramFiles%\Microsoft Visual Studio\18\BuildTools\VC\Auxiliary\Build\vcvars64.bat" (
+  call "%ProgramFiles%\Microsoft Visual Studio\18\BuildTools\VC\Auxiliary\Build\vcvars64.bat" >nul
+  exit /b 0
+)
+exit /b 0
